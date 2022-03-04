@@ -1,0 +1,29 @@
+{
+  "name": "voucher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "scripts": {
+    "dev:tsc": "tsc --watch -p .",
+    "dev": "run-p dev:*",
+    "dev:serve": "set NODE_ENV=dev && nodemon -e js -w lib lib/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "@types/hapi__hapi": "^20.0.10",
+    "agenda": "^4.2.1",
+    "mongodb": "^4.4.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.44",
+    "typescript": "^4.6.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/uuid": "^8.3.4"
+  }
+}
